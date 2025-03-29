@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion, useMotionValue, animate } from "framer-motion";
-import image from "@/assets/image.jpeg"; // Update with actual image path
 
 // ✅ Counter Component
 const Counter = ({ target ,symbol}) => {

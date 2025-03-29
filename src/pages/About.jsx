@@ -1,11 +1,11 @@
 
-import { FocusCards } from "@/components/ui/focus-cards";
-import { Timeline } from "@/components/ui/timeline";
+import { FocusCards } from "../components/ui/focus-cards";
+import { Timeline } from "../components/ui/timeline";
 import { motion } from "framer-motion";
 // import { title } from "process";
-import image from "@/assets/Team/k.jpg";
-import image1 from "@/assets/Team/n.png";
-import image2 from "@/assets/Team/s.png";
+import image from "../assets/Team/k.jpg";
+import image1 from "../assets/Team/n.png";
+import image2 from "../assets/Team/s.png";
 
 const About = () => {
   const timelineData = [
@@ -27,26 +27,26 @@ const About = () => {
     {
       title: "Mohammed Kabeer",
       src: image,
-      post:"Founder & CEO",
-      linkdin:"https://www.linkedin.com/in/mohammed-kabeer?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BriPpMCByTLKleDKLoDQZ2w%3D%3D",
+      post: "Founder & CEO",
+      linkdin: "https://www.linkedin.com/in/mohammed-kabeer?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BriPpMCByTLKleDKLoDQZ2w%3D%3D",
     },
     {
       title: "Mohammad Aman",
       src: image1,
-      post:"R&D Head",
-      linkdin:"https://www.linkedin.com/in/mohammad-aman-993421326?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWpH6%2Bbb4SyKT85jtn%2FsP8A%3D%3D",
+      post: "R&D Head",
+      linkdin: "https://www.linkedin.com/in/mohammad-aman-993421326?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWpH6%2Bbb4SyKT85jtn%2FsP8A%3D%3D",
     },
     {
       title: "Esha Jenifer",
       src: image,
-      post:"Branding & Marketing Head",
-      linkdin:"https://www.linkedin.com/in/esha-jenifer-120989250?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYLw7hngdRgGgYiGkK8cXhw%3D%3D",
+      post: "Branding & Marketing Head",
+      linkdin: "https://www.linkedin.com/in/esha-jenifer-120989250?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYLw7hngdRgGgYiGkK8cXhw%3D%3D",
     },
     {
       title: "Saravanan M",
       src: image2,
-      post:"Mechatronics & Robotics Lead",
-      linkdin:"https://www.linkedin.com/in/saravanan-m-29a42a249?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZMSx50B9T9S1045T1NBTNA%3D%3D",
+      post: "Mechatronics & Robotics Lead",
+      linkdin: "https://www.linkedin.com/in/saravanan-m-29a42a249?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZMSx50B9T9S1045T1NBTNA%3D%3D",
     },
   ];
   return (
