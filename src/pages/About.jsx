@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import image from "../assets/Team/k.jpg";
 import image1 from "../assets/Team/n.png";
 import image2 from "../assets/Team/s.png";
+import image3 from "../assets/Team/e.png";
 
 const About = () => {
   const timelineData = [
@@ -38,7 +39,7 @@ const About = () => {
     },
     {
       title: "Esha Jenifer",
-      src: image,
+      src: image3,
       post: "Branding & Marketing Head",
       linkdin: "https://www.linkedin.com/in/esha-jenifer-120989250?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYLw7hngdRgGgYiGkK8cXhw%3D%3D",
     },

@@ -6,6 +6,8 @@ import Linears from "../components/ContactUs";
 import Cursaol from "../components/Cursaol";
 import Impact from "./Impact";
 import ContactUs from "../components/ContactUs";
+import landingPageImage from "@/assets/landing.jpeg";
+import cropAnna from "@/assets/CropAnna.png";
 
 const textVariant = {
   hidden: { opacity: 0, y: 20 },
@@ -35,7 +37,7 @@ const Home = () => {
         <motion.div
           className="absolute inset-0 bg-cover bg-top rounded-xl"
           style={{
-            backgroundImage: "url('src/assets/landing.jpeg')",
+            backgroundImage: `url(${landingPageImage})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             width: "100%",
