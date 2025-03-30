@@ -12,7 +12,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 const Cursaol = ({ heading, data }) => {
     return (
         <div
-            className="h-[17rem] !mt-10 rounded-md flex flex-col antialiased dark:bg-black bg-transparent items-center justify-center relative overflow-hidden">
+            className="h-[20rem] !mx-10 rounded-md flex flex-col antialiased dark:bg-black bg-transparent items-center justify-center relative overflow-hidden">
             <h1 className='text-white text-5xl leading-2'
                 style={{ fontFamily: "Telegraf, sans-serif", fontWeight: 700 }}
             >

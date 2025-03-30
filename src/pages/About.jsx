@@ -114,8 +114,13 @@ const About = () => {
         ))}
       </motion.div>
       <Timeline data={timelineData} />
-      <section>
-        <h1 className="screenwh text-5xl justify-center flex !m-4">The minds behind our mission</h1>
+      <section className="screenwh">
+        <h1 className=" text-5xl justify-center flex !m-10 leading-2"
+          style={{
+            fontFamily: "Telegraf, sans-serif",
+            fontWeight: 700,
+          }}
+        >The Minds Behind Our Mission</h1>
       </section>
       <FocusCards cards={cards} />
     </div>

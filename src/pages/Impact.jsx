@@ -29,7 +29,7 @@ const Counter = ({ target ,symbol}) => {
 // ✅ Impact Page Component
 const Impact = () => {
   return (
-    <div className="w-full  py-1 !mt-20 h-full !m-1 rounded-lg mr-4 text-white">
+    <div className="w-full py-10 px-10 !mt-20 h-full !m-1 rounded-lg mr-4 text-white">
       <h1 className="text-5xl leading-2 font-bold !mb-10 flex items-center justify-center">Our Impact</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">

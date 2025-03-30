@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
-// import Image from '@/assets/image.jpeg'
-// import Image1 from '@/assets/k.jpg'
 
 export const Card = React.memo(({
     card,
@@ -14,7 +12,7 @@ export const Card = React.memo(({
         onMouseEnter={() => setHovered(index)}
         onMouseLeave={() => setHovered(null)}
         className={cn(
-            "w-full rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-60 md:h-96 transition-all duration-300 ease-out",
+            "w-full rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-60 md:h-96 transition-all duration-400 ease-out",
             hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
         )}>
         <img
@@ -27,7 +25,12 @@ export const Card = React.memo(({
                 hovered === index ? "opacity-100" : "opacity-0"
             )}>
             <div
-                className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
+                className="text-xl md:text-xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200"
+                style={{
+                    fontFamily: "Telegraf, sans-serif",
+                    fontWeight: 700,
+                }}
+            >
                 {card.title}
 
             </div>

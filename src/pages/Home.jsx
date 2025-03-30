@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 // import ChatBot from "../components/ChatBot";
 import Mission from "../components/Mission";
 import Services from "../components/Services";
-import Linears from "../components/ContactUs";
 import Cursaol from "../components/Cursaol";
 import Impact from "./Impact";
 import ContactUs from "../components/ContactUs";
@@ -83,7 +82,7 @@ const Home = () => {
           onClick={() => window.location.href = "/chat"}
         >
           <img
-            src="src/assets/CropAnna.png" // Ensure correct image path
+            src={cropAnna} // Ensure correct image path
             alt="ChatBot Icon"
             className="w-16 h-16 object-contain rounded-full"
           />

@@ -15,19 +15,20 @@
 @font-face {
   font-family: "Telegraf";
   src: url("src/assets/fonts/TelegrafRegular_272984568a25d8528fe2de8b20b29011.woff") format("woff");
+  src: url('/src/assets/fonts/TelegrafRegular_272984568a25d8528fe2de8b20b29011.woff') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Telegraf";
-  src: url("src/assets/fonts/Telegraf UltraBold 800.woff") format("woff");
+  src: url("/src/assets/fonts/Telegraf UltraBold 800.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Avallon";
-  src: url("src/assets/fonts/Avallon.woff") format("truetype");
+  src: url("/src/assets/fonts/Avallon.woff") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
