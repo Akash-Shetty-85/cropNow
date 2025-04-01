@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-// import ChatBot from "../components/ChatBot";
 import Mission from "../components/Mission";
 import Services from "../components/Services";
 import Cursaol from "../components/Cursaol";
@@ -25,16 +24,16 @@ const imageVariant = {
   },
 };
 
-const Home = () => {
+const HomeMobile = () => {
   const title = "CropNow.".split("");
   const subtitle = "For A Better India.".split("");
 
   return (
     <>
-      <div className="relative min-h-screen flex items-center justify-center overflow-x-hidden">
+      <div className=" relative min-h-screen hidden md:flex items-center justify-center overflow-x-hidden p-4">
         {/* Background Image */}
         <motion.div
-          className="absolute inset-0 bg-cover bg-top rounded-xl"
+          className="absolute inset-0 bg-top rounded-xl"
           style={{
             backgroundImage: `url(${landingPageImage})`,
             backgroundSize: "cover",
@@ -49,11 +48,8 @@ const Home = () => {
         />
 
         {/* Text Content */}
-        <div className="relative text-left text-white p-6 bg-opacity-50 rounded-3xl shadow-3xl">
-          <h1
-            className="text-8xl font-bold"
-            style={{ fontFamily: "Telegraf, sans-serif", fontWeight: 700 }}
-          >
+        <div className="relative text-left text-white p-4 bg-opacity-60 rounded-xl">
+          <h1 className="text-5xl md:text-8xl  font-bold leading-tight" style={{ fontFamily: "Telegraf, sans-serif" }}>
             {title.map((letter, i) => (
               <motion.span key={i} custom={i} variants={textVariant} initial="hidden" animate="visible">
                 {letter}
@@ -61,10 +57,7 @@ const Home = () => {
             ))}
           </h1>
 
-          <p
-            className="text-green-500 text-5xl mt-2 text-right"
-            style={{ fontFamily: "Avallon, sans-serif" }}
-          >
+          <p className="text-green-500 text-3xl md:text-5xl mt-1 text-right" style={{ fontFamily: "Avallon, sans-serif" }}>
             {subtitle.map((letter, i) => (
               <motion.span key={i} custom={i + 10} variants={textVariant} initial="hidden" animate="visible">
                 {letter}
@@ -73,31 +66,28 @@ const Home = () => {
           </p>
         </div>
 
-        {/* ChatBot Icon - Fixed inside the Hero Section */}
         <motion.div
-          className="absolute bottom-6 right-6  p-2 rounded-full shadow-lg cursor-pointer hover:bg-green-100 transition-transform transform hover:scale-110"
+          className="absolute bottom-4 right-4 p-1 rounded-full shadow-lg cursor-pointer hover:bg-green-100 transition-transform transform hover:scale-105"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           onClick={() => window.location.href = "/chat"}
         >
           <img
-            src={cropAnna} // Ensure correct image path
+            src={cropAnna}
             alt="ChatBot Icon"
-            className="w-16 h-16 object-contain rounded-full"
+            className="w-12 h-12 object-contain rounded-full"
           />
         </motion.div>
-
       </div>
 
       <Mission />
       <Services />
       <Impact />
       <Cursaol heading={'CropNow Featured In'} />
-      <ContactUs/>
-      
+      <ContactUs />
     </>
   );
 };
 
-export default Home;
+export default HomeMobile;

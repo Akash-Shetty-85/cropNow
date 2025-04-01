@@ -36,7 +36,7 @@ const CareerPage = () => {
                     }}
                 >Welcome to Your Future with CropNow!</h1>
                 <p className="text-lg text-gray-300 w-6xl"
-                
+
                 >
                     CropNow is revolutionizing farming by integrating AI, IoT, and cutting-edge research into sustainable agriculture.
                     Join us in making farming smarter and more efficient.

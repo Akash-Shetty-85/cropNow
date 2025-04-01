@@ -16,24 +16,24 @@ const AppRoutes = () => {
     return (
         <Router>
             {/* <ErrorBoundary> */}
-                <MainLayout>
-                    <Suspense fallback={<div className="p-4 text-center">Loading...</div>}>
-                        <Routes>
-                            <Route path="/" element={<Home />} />
-                            <Route path="/about" element={<About />} />
-                            <Route path="/chat" element={<Chat />} />
-                            <Route path="/careers" element={<Careers />} />
-                            {/* <Route path='/technology' element={<Technology />} /> */}
-                            <Route path="/dashboard" element={
-                                <ProtectedRoute>
-                                    <Dashboard />
-                                </ProtectedRoute>
-                            } />
+            <MainLayout>
+                <Suspense fallback={<div className="p-4 text-center">Loading...</div>}>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/chat" element={<Chat />} />
+                        <Route path="/careers" element={<Careers />} />
+                        <Route path='/technology' element={<Technology />} />
+                        <Route path="/dashboard" element={
+                            <ProtectedRoute>
+                                <Dashboard />
+                            </ProtectedRoute>
+                        } />
 
-                            <Route path="*" element={<NotFound />} />
-                        </Routes>
-                    </Suspense>
-                </MainLayout>
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </Suspense>
+            </MainLayout>
             {/* </ErrorBoundary> */}
         </Router>
     );
