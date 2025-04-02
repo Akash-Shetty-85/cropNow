@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import image from '@/assets/CropAnna.png'
 
 const CropAnnaSection = () => {
   return (
@@ -66,7 +67,7 @@ const CropAnnaSection = () => {
         transition={{ delay: 1, duration: 1.5 }}
       >
         <img
-          src="src/assets/CropAnna.png" // Ensure the correct path
+          src={image}// Ensure the correct path
           alt="CropAnna AI Assistant"
           className="w-80"
         />
