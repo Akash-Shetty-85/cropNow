@@ -80,7 +80,7 @@ const HomeMobile = () => {
           />
         </motion.div>
       </div>
-
+      
       <Mission />
       <Services />
       <Impact />
