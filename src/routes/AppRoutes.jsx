@@ -1,6 +1,8 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
+import OurSolutions from "@/pages/OurSolutions";
+import RAndD from "@/pages/RAndD";
 
 
 // Lazy loading for better performance
@@ -24,6 +26,8 @@ const AppRoutes = () => {
                         <Route path="/chat" element={<Chat />} />
                         <Route path="/careers" element={<Careers />} />
                         <Route path='/technology' element={<Technology />} />
+                        <Route path='/ourSolution' element={<OurSolutions/>} />
+                        <Route path="/randd" element={<RAndD />} />
                         <Route path="/dashboard" element={
                             <ProtectedRoute>
                                 <Dashboard />

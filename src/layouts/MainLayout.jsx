@@ -40,9 +40,9 @@ const MainLayout = ({ children }) => {
                 <div className="flex gap-3">
                     {/* <NavItem to="/" text="Home" /> */}
                     <NavItem to="/about" text="About" />
-                    <NavItem to="/press" text="Our Solutions " />
+                    <NavItem to="/ourSolution" text="Our Solutions " />
                     <NavItem to="/technology" text="Technology" />
-                    <NavItem to="/profile" text="R&D" />
+                    <NavItem to="/randd" text="R&D" />
                     <NavItem to="/profile" text="Contact" />
                 </div>
 
