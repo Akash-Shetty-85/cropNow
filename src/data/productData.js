@@ -1,6 +1,6 @@
 import seed from '@/assets/Products/SEED_X.png';
 import nest from '@/assets/Products/NEST.png';
-import kaptor from '@/assets/Products/Kaptor_C7.png';
+import kaptor from '@/assets/Products/KAPTOR_C7.png';
 import aowcm from '@/assets/Products/AOWCM.png';
 import seedx from '@/assets/Products/seedx.jpg';
 
