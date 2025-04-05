@@ -71,7 +71,7 @@ const CareerPage = () => {
 
             {/* Benefits Section */}
             <motion.div
-                className="mt-16 max-w-4xl text-center space-y-6"
+                className="!mt-16 max-w-4xl text-center space-y-6"
                 data-aos="fade-up"
                 style={{
                     marginTop: "4rem",
@@ -103,14 +103,14 @@ const CareerPage = () => {
 
             {/* CTA - Apply Now */}
             <motion.div
-                className="mt-10 text-center max-w-2xl"
+                className="!mt-10 text-center max-w-2xl"
                 data-aos="fade-up"
                 style={{
                     marginTop: "2rem",
                 }}
             >
                 <h2 className="text-3xl font-bold text-green-400">Join our team</h2>
-                <p className="mt-3 text-gray-300"
+                <p className="!mt-3 text-gray-300"
                     style={{
                         marginTop: "1rem",
                     }}>
@@ -118,7 +118,7 @@ const CareerPage = () => {
                 </p>
                 <button
                     onClick={() => setIsModalOpen(true)}
-                    className="mt-5 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg text-lg shadow-lg transition-all"
+                    className="!mt-5 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg text-lg shadow-lg transition-all"
                     style={{
                         marginTop: "2rem",
                     }}
@@ -131,14 +131,14 @@ const CareerPage = () => {
             <Modal
                 isOpen={isModalOpen}
                 onRequestClose={() => setIsModalOpen(false)}
-                className="bg-white text-black p-6 rounded-xl max-w-md mx-auto shadow-2xl mt-20"
+                className="bg-white text-black p-6 rounded-xl max-w-md mx-auto shadow-2xl !mt-20"
                 overlayClassName="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center"
             >
-                <h3 className="text-2xl font-bold text-green-600">Apply for C-Force</h3>
+                <h3 className="text-2xl font-bold text-green-600">Apply for CropNow</h3>
                 <p className="text-gray-600 mb-4">Fill in your details to apply.</p>
 
                 <form
-                    className="space-y-4"
+                    className="!space-y-6"
                     onSubmit={(e) => {
                         e.preventDefault();
                         setIsModalOpen(false);
@@ -149,7 +149,7 @@ const CareerPage = () => {
                     <input type="text" placeholder="Phone Number" className="w-full p-2 border rounded-lg" required />
                     <textarea placeholder="Why do you want to join?" className="w-full p-2 border rounded-lg" rows="3" required></textarea>
 
-                    <div className="flex gap-4">
+                    <div className="flex gap-5">
                         <button type="submit" className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">
                             Submit
                         </button>

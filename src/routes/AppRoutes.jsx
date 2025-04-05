@@ -5,6 +5,7 @@ import OurSolutions from "@/pages/OurSolutions";
 import RAndD from "@/pages/RAndD";
 
 
+
 // Lazy loading for better performance
 const Home = lazy(() => import("../pages/Home"));
 const About = lazy(() => import("../pages/About"));
@@ -14,6 +15,7 @@ const ProtectedRoute = lazy(() => import("../pages/ProtectedRoute"));
 const Chat = lazy(() => import("../pages/Chat"));
 const Careers = lazy(() => import("../pages/Careers"));
 const Technology = lazy(() => import("../pages/Technology"));
+const ContactUs = lazy(() => import("../pages/Contact"));
 const AppRoutes = () => {
     return (
         <Router>
@@ -27,6 +29,7 @@ const AppRoutes = () => {
                         <Route path="/careers" element={<Careers />} />
                         <Route path='/technology' element={<Technology />} />
                         <Route path='/oursolution' element={<OurSolutions/>} />
+                        <Route path="/contact" element={<ContactUs/>} />
                         <Route path="/randd" element={<RAndD />} />
                         <Route path="/dashboard" element={
                             <ProtectedRoute>

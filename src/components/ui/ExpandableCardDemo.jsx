@@ -79,7 +79,7 @@ export function ExpandableCardDemo() {
                                     <div className="">
                                         <motion.h3
                                             layoutId={`title-${active.title}-${id}`}
-                                            className="font-medium text-neutral-700 dark:text-neutral-200 text-base">
+                                            className="font-bold text-neutral-700 dark:text-neutral-200 text-3xl">
                                             {active.title}
                                         </motion.h3>
                                         {/* <motion.p
@@ -95,7 +95,7 @@ export function ExpandableCardDemo() {
                                         animate={{ opacity: 1 }}
                                         exit={{ opacity: 0 }}
                                         href={active.ctaLink}
-                                        target="_blank"
+                                        // target="_blank"
                                         className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white">
                                         {active.ctaText}
                                     </motion.a>
@@ -106,7 +106,7 @@ export function ExpandableCardDemo() {
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         exit={{ opacity: 0 }}
-                                        className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]">
+                                        className="text-neutral-600 text-xs md:text-sm lg:text-base h-[40vh] md:h-fit pb-10 flex flex-col items-start gap-4 overflow-y-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]">
                                         {typeof active.content === "function"
                                             ? active.content()
                                             : active.content}
@@ -118,7 +118,7 @@ export function ExpandableCardDemo() {
                 ) : null}
             </AnimatePresence>
             <ul
-                className="max-w-full mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-4">
+                className="max-w-full mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-10">
                 {cards.map((card, index) => (
                     <motion.div
                         layoutId={`card-${card.title}-${id}`}
@@ -132,12 +132,12 @@ export function ExpandableCardDemo() {
                                     height={100}
                                     src={image}
                                     alt={card.title}
-                                    className="h-60 w-full rounded-lg object-cover object-top" />
+                                    className="h-80 w-full rounded-lg object-cover object-top" />
                             </motion.div>
                             <div className="flex justify-center items-start flex-col">
                                 <motion.h3
                                     layoutId={`title-${card.title}-${id}`}
-                                    className="font-medium text-white dark:text-neutral-200 text-center md:text-left text-base">
+                                    className="font-bold text-white dark:text-neutral-200 text-center md:text-left text-3xl">
                                     {card.title}
                                 </motion.h3>
                                 {/* <motion.p
@@ -192,10 +192,10 @@ const cards = [
         title: "CropNow Farm Survey",
         src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
         ctaText: "Visit",
-        ctaLink: "https://ui.aceternity.com/templates",
+        ctaLink: "/",
         content: () => {
             return (
-                <div className=" text-gray-800 overflow-y-auto h-60 p-9">
+                <div className=" text-gray-800 overflow-y-auto h-full md:h-[30vh] p-10">
                     <section className="py-2">
                         <div className="text-start">
                             <h2 className="text-2xl font-semibold">Why Choose CropNow Farm Survey?</h2>
@@ -231,7 +231,7 @@ const cards = [
                             </div>
                         </div>
                     </section>
-
+                    {/* 
                     <section className="py-2 !mb-1.5">
                         <div className="text-center">
                             <h2 className="text-xl font-semibold">Get in Touch</h2>
@@ -240,29 +240,56 @@ const cards = [
                                 Contact Us
                             </a>
                         </div>
-                    </section>
+                    </section> */}
                 </div>
             );
         },
     },
     {
-        description: "Babbu Maan",
+        description: "On-Ground Agricultural Assessment & Expert Solutions",
         title: "CropNow Farm Partner",
         src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
         ctaText: "Visit",
-        ctaLink: "https://ui.aceternity.com/templates",
+        ctaLink: "/",
         content: () => {
             return (
-                <p>Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-                    voice and profound lyrics that resonate deeply with his audience. Born
-                    in the village of Khant Maanpur in Punjab, India, he has become a
-                    cultural icon in the Punjabi music industry. <br /> <br />His songs
-                    often reflect the struggles and triumphs of everyday life, capturing
-                    the essence of Punjabi culture and traditions. With a career spanning
-                    over two decades, Babu Maan has released numerous hit albums and
-                    singles that have garnered him a massive fan following both in India
-                    and abroad.
-                </p>
+                <div className=" text-gray-800 overflow-y-auto h-full md:h-[30vh] p-10">
+                    <section className="py-2">
+                        <div className="text-start">
+                            <h2 className="text-2xl font-semibold">Why Choose CropNow Farm Partner</h2>
+                            <p className="!mt-4 text-lg">
+                                CropNow Farm Partner is an online service designed to assist farmers with their agricultural challenges. Through a simple WhatsApp query, farmers can directly connect with CropNow’s experts. Our team responds promptly, providing guidance and solutions tailored to the specific needs of each farmer.
+
+                            </p>
+                        </div>
+                    </section>
+
+                    <section className="py-2">
+                        <div className="text-center">
+                            <h2 className="text-2xl font-semibold">How It Works:
+                            </h2>
+                            <div className="grid grid-cols-1 gap-4 !mt-4">
+                                <div className="bg-green-100 p-4 rounded-lg shadow-md">
+                                    <h3 className="text-lg font-bold">Send Your Quer</h3>
+                                    <p>Farmers can reach out via WhatsApp with their concerns.</p>
+                                </div>
+                                <div className="bg-green-100 p-4 rounded-lg shadow-md">
+                                    <h3 className="text-lg font-bold">Expert Assistance</h3>
+                                    <p>CropNow’s team analyzes the issue and provides solutions online.
+                                    </p>
+                                </div>
+                                <div className="bg-green-100 p-4 rounded-lg shadow-md">
+                                    <h3 className="text-lg font-bold">                                  Real-Time Support </h3>
+                                    <p>Expert guidance on crop planning, disease management, and sustainable farming practices.</p>
+                                </div>
+                                <div className="bg-green-100 p-4 rounded-lg shadow-md">
+                                    <h3 className="text-lg font-bold">Follow-Up Support</h3>
+                                    <p>We ensure quick and effective problem-solving, empowering farmers to make informed decisions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             );
         },
     },

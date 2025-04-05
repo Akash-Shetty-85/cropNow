@@ -1,7 +1,8 @@
 import { FocusCards } from '../components/ui/focus-cards';
 import { Timeline } from '../components/ui/timeline';
 import { motion } from 'framer-motion';
-import teamData from '@/data/teamData';
+import { teamData } from '@/data/teamData';
+import { advisorsData } from '@/data/teamData';
 import timelineData from '@/data/timeLine';
 import featuresData from '@/data/featuresData';
 
@@ -66,14 +67,55 @@ const About = () => {
       </section>
       <FocusCards
         cards={teamData}
-        className="lg:grid-cols-4 lg:max-w-full"
+        className="lg:grid-cols-4 lg:max-w-full font-extrabold"
         imgClassName="rounded-lg hover:scale-105 transition-transform"
         renderContent={(card) => (
           <>
-            <p className="text-sm text-gray-200 mt-1">{card.post}</p>
+            <p className="text-sm text-gray-200 !mt-1">{card.post}</p>
             <a href={card.linkedin} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 underline mt-1">
-              LinkedIn Profile
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="text-blue-500"
+              >
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.765 0-.974.784-1.767 1.75-1.767s1.75.792 1.75 1.767c0 .975-.784 1.765-1.75 1.765zm13.5 11.268h-3v-5.604c0-1.338-.027-3.062-1.867-3.062-1.868 0-2.155 1.46-2.155 2.964v5.702h-3v-10h2.882v1.364h.04c.402-.762 1.382-1.564 2.845-1.564 3.04 0 3.615 2.004 3.615 4.609v5.591z" />
+              </svg>
             </a>
+          </>
+        )}
+      />
+
+      <section className="screenwh">
+        <h1 className="text-5xl justify-center flex !m-10 md:leading-2 lg:leading-2" style={{ fontFamily: 'Telegraf, sans-serif', fontWeight: 700 }}>
+          Advisors
+        </h1>
+      </section>
+      <FocusCards
+        cards={advisorsData}
+        className="lg:grid-cols-3 lg:max-w-full font-extrabold"
+        imgClassName="rounded-lg hover:scale-105 transition-transform"
+        renderContent={(card) => (
+          <>
+            <p className="text-sm text-gray-200 !mt-1">{card.post}</p>
+
+            {
+              card.linkedin && (<a href={card.linkedin} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 underline mt-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="text-blue-500"
+                >
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.765 0-.974.784-1.767 1.75-1.767s1.75.792 1.75 1.767c0 .975-.784 1.765-1.75 1.765zm13.5 11.268h-3v-5.604c0-1.338-.027-3.062-1.867-3.062-1.868 0-2.155 1.46-2.155 2.964v5.702h-3v-10h2.882v1.364h.04c.402-.762 1.382-1.564 2.845-1.564 3.04 0 3.615 2.004 3.615 4.609v5.591z" />
+                </svg>
+              </a>)
+            }
+
           </>
         )}
       />

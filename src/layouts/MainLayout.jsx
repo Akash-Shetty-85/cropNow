@@ -43,7 +43,7 @@ const MainLayout = ({ children }) => {
                     <NavItem to="/ourSolution" text="Our Solutions " />
                     <NavItem to="/technology" text="Technology" />
                     <NavItem to="/randd" text="R&D" />
-                    <NavItem to="/profile" text="Contact" />
+                    <NavItem to="/contact" text="Contact" />
                 </div>
 
             </motion.nav>

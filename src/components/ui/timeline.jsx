@@ -26,21 +26,20 @@ export const Timeline = ({data}) => {
         <div
             className="w-full  dark:bg-neutral-950 font-sans md:px-10"
             ref={containerRef}>
-            <div className="max-w-full !mx-auto py-20 px-4 md:px-4 lg:px-10">
-                <h2 className="text-lg md:text-5xl mb-4 text-white dark:text-white max-w-4xl leading-2"
+            <div className="max-w-full !mx-auto py-10 px-4 md:px-4 lg:px-10 ">
+                <h2 className="text-lg md:text-5xl !mb-4 text-white dark:text-white max-w-4xl "
                 style={{ fontFamily: "Telegraf, sans-serif", fontWeight: 700 }}
                 >
                     Journey Of CropNow
                 </h2>
-                {/* <p
-                    className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-                    I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-                    a timeline of my journey.
-                </p> */}
+                <p
+                    className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm !mb-0">
+                   CropNow’s Key Achievements
+                </p>
             </div>
-            <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+            <div ref={ref} className="relative max-w-7xl mx-auto pb-10">
                 {data.map((item, index) => (
-                    <div key={index} className="flex justify-start pt-10 md:pt-40 md:gap-10">
+                    <div key={index} className="flex justify-start !pt-15 md:pt-40 md:gap-10">
                         <div
                             className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
                             <div

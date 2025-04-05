@@ -9,9 +9,10 @@
   --color-leaf-green: #43923f;
   --color-forest-green: #0d3b09;
   --color-bright-green: #42923e;
-  --color-bright-green-500:#3b8e3d;
+  --color-bright-green-500: #3b8e3d;
   --color-moss-green: #043b19;
 }
+
 @font-face {
   font-family: "Telegraf";
   src: url("src/assets/fonts/TelegrafRegular_272984568a25d8528fe2de8b20b29011.woff") format("woff");
@@ -26,21 +27,24 @@
   font-weight: 800;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Avallon";
   src: url("/src/assets/fonts/Avallon.woff") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 @theme inline {
   --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
- 
+
   @keyframes scroll {
     to {
       transform: translate(calc(-50% - 0.5rem));
     }
   }
 }
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -152,11 +156,22 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
-.screenwh{
+.screenwh {
   @apply w-full py-1 !mt-10 h-full !m-1 rounded-lg mr-1.5
+}
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
 }

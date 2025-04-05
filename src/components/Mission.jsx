@@ -54,7 +54,7 @@ const content = [
 ];
 const Mission = () => {
   return (
-    <div className="w-full min-h-screen py-1 !mt-10 h-full !m-1 rounded-lg mr-1.5"
+    <div className="w-full  py-1 !mt-10 h-full rounded-lg mr-1.5"
     >
       <h1 className="text-5xl !mb-10 text-white flex items-center justify-center font-semibold"
         style={{

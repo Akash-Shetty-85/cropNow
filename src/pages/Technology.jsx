@@ -54,7 +54,7 @@ const Technology = () => {
         <div className="hidden md:block">
           <FocusCards
             cards={productData}
-            className="lg:grid-cols-5 lg:max-w-full gap-5"
+            className="lg:grid-cols-3  lg:max-w-full gap-10"
             imgClassName="rounded-lg hover:scale-105 transition-transform object-fill items-start"
             onClick={handleCardClick}
           />
