@@ -1,9 +1,10 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-import image from "@/assets/image.jpeg";
+import image1 from "@/assets/Products/partner.jpeg";
+import image2 from "@/assets/Products/surevy.jpeg";
 
-export function ExpandableCardDemo() {
+export function ExpandableCardDemo({ card }) {
     const [active, setActive] = useState(null);
     const id = useId();
     const ref = useRef(null);
@@ -69,7 +70,7 @@ export function ExpandableCardDemo() {
                                     priority
                                     width={200}
                                     height={200}
-                                    src={image}
+                                    src={active.src}
                                     alt={active.title}
                                     className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top" />
                             </motion.div>
@@ -130,7 +131,7 @@ export function ExpandableCardDemo() {
                                 <img
                                     width={100}
                                     height={100}
-                                    src={image}
+                                    src={card.src}
                                     alt={card.title}
                                     className="h-80 w-full rounded-lg object-cover object-top" />
                             </motion.div>
@@ -190,9 +191,9 @@ const cards = [
     {
         description: "Lana Del Rey",
         title: "CropNow Farm Survey",
-        src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+        src: image2,
         ctaText: "Visit",
-        ctaLink: "/",
+        ctaLink: "/contact",
         content: () => {
             return (
                 <div className=" text-gray-800 overflow-y-auto h-full md:h-[30vh] p-10">
@@ -248,9 +249,9 @@ const cards = [
     {
         description: "On-Ground Agricultural Assessment & Expert Solutions",
         title: "CropNow Farm Partner",
-        src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
+        src: image1,
         ctaText: "Visit",
-        ctaLink: "/",
+        ctaLink: "/contact",
         content: () => {
             return (
                 <div className=" text-gray-800 overflow-y-auto h-full md:h-[30vh] p-10">

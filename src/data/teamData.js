@@ -37,12 +37,6 @@ const teamData = [
 
 const advisorsData = [
     {
-        title: "Malathi Ramakrishna",
-        src: image4,
-        post: "Innovation & Entrepreneurship Advisor ",
-        linkedin: "https://www.linkedin.com/in/malathi-ramakrishna-12441541",
-    },
-    {
         title: "Prof. Ts. Dr. Pasupuleti Visweswara Rao",
         src: image5,
         post: "Research Advisor",
@@ -52,6 +46,12 @@ const advisorsData = [
         title: "Ghouse",
         src: image6,
         post: "Engineering Advisor",
+    },
+    {
+        title: "Malathi Ramakrishna",
+        src: image4,
+        post: "Innovation & Entrepreneurship Advisor ",
+        linkedin: "https://www.linkedin.com/in/malathi-ramakrishna-12441541",
     },
 ];
 export { teamData, advisorsData };

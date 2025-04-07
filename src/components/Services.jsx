@@ -11,7 +11,7 @@ const Services = () => {
       }      }>
         Services
       </h1>
-      <ExpandableCardDemo />
+      <ExpandableCardDemo/>
     </div>
   )
 }

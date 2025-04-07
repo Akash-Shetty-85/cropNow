@@ -12,18 +12,29 @@ const OurSolutions = () => {
         {
             title: "Environment",
             value: "Environment",
-            content: <TabContent title="Helping Communities & Businesses Build a Greener Future" content={environmentContent} />,
+            content: <TabContent title="Sustainable Practices for a Healthier Planet" content={environmentContent} />,
         },
         {
             title: "Government",
             value: "Government",
-            content: <TabContent title="Supporting Smart Policies for Food Security & Sustainability" content={governmentContent} />,
+            content: <TabContent title="Helping Governments Build a Stronger Agricultural Sector" content={governmentContent} />,
         },
         {
             title: "Food Industry",
             value: "Food Industry",
             content: <TabContent title="Transforming the Food Industry with Smart Solutions" content={foodIndustryContent} />,
         },
+        {
+            title: "Waste Management",
+            value: "Waste Management",
+            content: <TabContent title="Waste Management for a Cleaner World" content={wasteManagementContent} />,
+        },
+        {
+            title: "Commerical Agriculture",
+            value: "Commerical Agriculture",
+            content: <TabContent title="Empowering Commercial Agriculture & Retail Chains"
+                content={commercialAgricultureContent} />,
+        }
     ];
 
     return (
@@ -87,4 +98,18 @@ const foodIndustryContent = [
     { heading: "Reducing Food Waste", text: "Identify inefficiencies and optimize processing to minimize losses." }
 ];
 
+const wasteManagementContent = [
+    { heading: "Byproduct Utilization:", text: "Convert agricultural waste into compost, animal feed, or biofuels to maximize its usability.    " },
+    { heading: "Efficient Waste Collection:", text: "Identify high-waste areas and streamline collection processes." },
+    { heading: "Recycling & Resource Recovery:", text: "Track and repurpose crop residues, husks, and other organic materials." },
+    { heading: "Monitoring Pollution Levels:", text: "Detects waste-related pollution and take corrective action to protect soil and water resources." },
+];
+
+
+const commercialAgricultureContent = [
+    { heading: "Farm-to-Shelf Traceability:", text: "Track produce quality from the farm to retail shelves, ensuring transparency and freshness." },
+    { heading: "Optimized Procurement:", text: "Source the best-quality crops with real-time yield predictions and supplier insights." },
+    { heading: "Waste Reduction Strategies:", text: " Minimize post-harvest losses and optimize distribution to prevent food spoilage.    " },
+    { heading: "Sustainable Sourcing", text: "Partner with eco-friendly farms and promote responsible agricultural practices." }
+];
 export default OurSolutions;

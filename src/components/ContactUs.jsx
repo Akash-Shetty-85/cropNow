@@ -14,7 +14,7 @@ const ContactUs = () => {
             description:
                 "Discover how CropNow’s AI-driven monitoring turns traditional farming into a smart, sustainable ecosystem, helping businesses and communities thrive.",
             buttonText: "TALK TO OUR EXPERT →",
-            color: "bg-blue-600 hover:bg-blue-700",
+            color: "bg-green-600 hover:bg-blue-700",
             option: "collaborate",
         },
         {
@@ -30,7 +30,7 @@ const ContactUs = () => {
             description:
                 "Explore transparent investment opportunities in cutting-edge AgriTech solutions that are shaping the future of sustainable agriculture.",
             buttonText: "REQUEST A PRESENTATION →",
-            color: "bg-purple-600 hover:bg-purple-700",
+            color: "bg-green-600 hover:bg-purple-700",
             option: "investment",
         },
     ];
@@ -38,7 +38,7 @@ const ContactUs = () => {
     return (
         <div className="min-h-fit flex flex-col items-center justify-center  text-white p-10">
             <h1 className="text-5xl font-bold !mb-8" style={{ fontFamily: "Telegraf, sans-serif", fontWeight: 700 }}>
-                Let's Get Linked
+               Lets Grow Sustinability Together
             </h1>
             <p className="text-lg !mb-10 text-gray-300">
                 Reach out to us for any inquiries or support.
@@ -49,7 +49,7 @@ const ContactUs = () => {
                 {cardData.map((card, index) => (
                     <div
                         key={index}
-                        className="bg-black border-r-2 border-green-500  text-white rounded-2xl shadow-white/75 shadow-lg p-8 text-left transition-all duration-300 hover:shadow-2xl"
+                        className="bg-black border-r-2 border-green-500  text-white rounded-2xl shadow-lg p-8 text-left transition-all duration-300 hover:shadow-2xl"
                     >
                         <h2 className="text-2xl font-bold !mb-4">{card.title}</h2>
                         <p className="text-gray-300 !mb-6">{card.description}</p>

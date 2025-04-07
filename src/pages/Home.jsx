@@ -57,7 +57,7 @@ const HomeMobile = () => {
             ))}
           </h1>
 
-          <p className="text-green-500 text-3xl md:text-5xl mt-1 text-right" style={{ fontFamily: "Avallon, sans-serif" }}>
+          <p className="text-black text-3xl md:text-5xl mt-1 text-right" style={{ fontFamily: "Avallon, sans-serif" }}>
             {subtitle.map((letter, i) => (
               <motion.span key={i} custom={i + 10} variants={textVariant} initial="hidden" animate="visible">
                 {letter}

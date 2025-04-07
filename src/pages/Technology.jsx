@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import vides from '@/assets/Video/0401.mp4';
+import vides from '@/assets/Video/0401n.mp4';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { FocusCards } from '@/components/ui/focus-cards';
@@ -54,8 +54,8 @@ const Technology = () => {
         <div className="hidden md:block">
           <FocusCards
             cards={productData}
-            className="lg:grid-cols-3  lg:max-w-full gap-10"
-            imgClassName="rounded-lg hover:scale-105 transition-transform object-fill items-start"
+            className="lg:grid-cols-3 lg:max-w-full gap-10 "
+            imgClassName="rounded-lg hover:scale-105 transition-transform object-fill items-start bg-black border-2"
             onClick={handleCardClick}
           />
         </div>
