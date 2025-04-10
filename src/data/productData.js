@@ -58,7 +58,7 @@ const productData = [
       { title: 'Precision Agriculture', description: 'Efficient pesticide and medicine spraying with targeted application. High-resolution imaging for accurate crop health monitoring and land mapping.' },
       { title: 'High Payload & Endurance', description: 'Strong lift capacity for carrying agricultural inputs and sensors. Long battery life with rapid charging for extended operations.' },
       { title: 'Smart Navigation & Control', description: 'GPS-guided autonomous flight with real-time obstacle detection. Remote monitoring and AI-powered autopilot for seamless operation.' },
-      { title: "Multi-Domain Applications", description: "ts surveillance, disaster response, and industrial inspections.Versatile use in forestry management and environmental monitoring." }
+      { title: "Multi-Domain Applications", description: "supports surveillance, disaster response, and industrial inspections.Versatile use in forestry management and environmental monitoring." }
     ],
   },
   {
@@ -71,12 +71,17 @@ const productData = [
       { title: 'Energy-Efficient & Eco-Friendly', description: 'Low power consumption ensures cost-effective operation. Sustainable composting process with reduced carbon footprint.' },
       { title: 'Fast & High-Yield Composting', description: 'Short cycle time for rapid compost production.Advanced microbial technology accelerates decomposition.' },
       {
-        title: 'Odor & Pest Control', description: 'Built-in deodorization system minimizes unpleasant smells.Sealed design prevents pest infestations and ensures hygiene.'
+        title: 'Odor & Pest Control',
+        description: 'Built-in deodorization system minimizes unpleasant smells.Sealed design prevents pest infestations and ensures hygiene.'
       },
       {
-        title: 'User-Friendly & Low Maintenance', description: 'Fully automated operation with minimal human intervention.Easy- to - clean system with self - regulating temperature control.'
+        title: 'User-Friendly & Low Maintenance',
+        description: 'Fully automated operation with minimal human intervention.Easy- to - clean system with self - regulating temperature control.'
       },
-      { title: 'Versatile Waste Processing', description: 'Handles a wide range of organic waste, including food scraps and garden waste.Produces nutrient-rich compost suitable for agriculture and home gardening.' },
+      {
+        title: 'Versatile Waste Processing',
+        description: 'Handles a wide range of organic waste, including food scraps and garden waste.Produces nutrient-rich compost suitable for agriculture and home gardening.'
+      },
     ],
   },
 ];
