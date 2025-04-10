@@ -17,9 +17,9 @@ const RAndD = () => {
                 >
                     Research & Development
                 </h1>
-                {/* <p className="text-lg !mt-4 text-gray-300 max-w-xl !mx-auto">
-                    Learn how CropNow is making a difference through innovation and smart solutions.
-                </p> */}
+                <p className="text-lg !mt-4 text-gray-300 max-w-full !mx-auto">
+                    Pioneering tomorrow’s agri-tech through continuous innovation and hands-on research.
+                </p>
             </motion.div>
 
             {/* Content Section */}

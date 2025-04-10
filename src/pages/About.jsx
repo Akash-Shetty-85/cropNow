@@ -19,9 +19,9 @@ const About = () => {
         <h1 className="text-6xl font-bold tracking-wide text-white drop-shadow-md" style={{ fontFamily: 'Telegraf, sans-serif', fontWeight: 700 }}>
           About Us
         </h1>
-        {/* <p className="text-lg !mt-4 text-gray-300 max-w-xl !mx-auto">
-          Learn how CropNow is making a difference.
-        </p> */}
+        <p className="text-lg !mt-4 text-gray-300 max-w-full !mx-auto">
+          Discover the roots of CropNow, where purpose meets progress in sustainable agriculture.
+        </p>
       </motion.div>
 
       {/* Description Section */}
