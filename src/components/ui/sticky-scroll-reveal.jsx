@@ -78,7 +78,14 @@ export const StickyScroll = ({
                                     margin: "2.5rem",
                                 }}
                             >
-                                {item.description}
+                                {item.html ? (
+                                    <p
+                                        className="text-gray-300 mb-6"
+                                        dangerouslySetInnerHTML={{ __html: item.description }}
+                                    />
+                                ) : (
+                                    <p className="text-gray-300 mb-6">{item.description}</p>
+                                )}
                             </motion.p>
                         </div>
                     ))}

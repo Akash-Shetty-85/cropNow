@@ -1,8 +1,8 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-import image1 from "@/assets/Products/partner.jpeg";
-import image2 from "@/assets/Products/surevy.jpeg";
+import image1 from "@/assets/Products/cfp.jpeg";
+import image2 from "@/assets/Products/cs.jpeg";
 
 export function ExpandableCardDemo({ card }) {
     const [active, setActive] = useState(null);
