@@ -31,12 +31,18 @@ const RAndD = () => {
             >
                 {/* CropChronicles */}
                 <div className="bg-white/10 p-6 rounded-xl shadow-lg ">
-                    <h2 className="text-3xl font-semibold text-white">CropChronicles – Stories That Matter</h2>
+                    <h2 className="text-3xl font-semibold text-white">Research & Development at CropNow</h2>
                     <p className="text-gray-300 !mt-2">
-                        A knowledge hub documenting real experiences, research findings, and innovative practices to help farmers and agri-businesses make informed decisions.
+                        CropNow’s R&D focuses on making farming smarter, more efficient, and sustainable. By studying real-world challenges and working closely with farmers, practical solutions are developed to improve agriculture for everyone.
                     </p>
                 </div>
-
+                <div className="bg-white/10 p-6 rounded-xl shadow-lg ">
+                    <h2 className="text-3xl font-semibold text-white">CropChronicles – Research Rooted in the Field
+                    </h2>
+                    <p className="text-gray-300 !mt-2">
+                        CropChronicles is our ongoing effort to observe, understand, and document what really happens in the fields. Our research team works side by side with nature, studying how crops respond to changing weather, common infections, pests, and unexpected challenges farmers face every day. These real-world insights help us design practical, farmer-friendly technologies that truly make a difference on the ground.
+                    </p>
+                </div>
                 {/* Case Studies */}
                 <div className="bg-white/10 p-6 rounded-xl shadow-lg">
                     <h2 className="text-3xl font-semibold text-white">Learning from Farmers – Case Studies</h2>

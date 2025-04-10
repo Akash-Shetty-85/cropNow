@@ -271,7 +271,7 @@ const cards = [
                             </h2>
                             <div className="grid grid-cols-1 gap-4 !mt-4">
                                 <div className="bg-green-100 p-4 rounded-lg shadow-md">
-                                    <h3 className="text-lg font-bold">Send Your Quer</h3>
+                                    <h3 className="text-lg font-bold">Send Your Query</h3>
                                     <p>Farmers can reach out via WhatsApp with their concerns.</p>
                                 </div>
                                 <div className="bg-green-100 p-4 rounded-lg shadow-md">
