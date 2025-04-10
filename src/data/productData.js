@@ -38,7 +38,7 @@ const productData = [
   {
     id: 3,
     title: 'NEST',
-    description: 'An advancaed soil health monittind system.',
+    description: 'An advancaed soil health monitoring system.',
     src: nest,
     details: [
       { title: 'Durable & Scalable Design', description: 'Compact and modular build for easy installation in various environments. Weatherproof enclosure ensures long-lasting outdoor performance.' },
