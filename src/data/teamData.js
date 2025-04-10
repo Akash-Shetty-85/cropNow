@@ -5,6 +5,7 @@ import image3 from "../assets/Team/e.png";
 import image4 from "../assets/Team/m.jpeg";
 import image5 from "../assets/Team/p.jpeg"
 import image6 from "../assets/Team/g.jpeg";
+import image7 from "@/assets/Team/bh.jpg"
 
 const teamData = [
     {
@@ -37,7 +38,7 @@ const teamData = [
 
 const advisorsData = [
     {
-        title: "Prof. Ts. Dr. Pasupuleti Visweswara Rao",
+        title: "Dr. Pasupuleti Visweswara Rao",
         src: image5,
         post: "Research Advisor",
         linkedin: "https://www.linkedin.com/in/prof-ts-dr-pasupuleti-visweswara-rao-93b2ab18",
@@ -48,10 +49,15 @@ const advisorsData = [
         post: "Engineering Advisor",
     },
     {
+        title: "Dr. N. BAKTHAVATSALAM",
+        src: image7,
+        post: "Entomology Advisor"
+    },
+    {
         title: "Malathi Ramakrishna",
         src: image4,
         post: "Innovation & Entrepreneurship Advisor ",
         linkedin: "https://www.linkedin.com/in/malathi-ramakrishna-12441541",
-    },
+    }
 ];
 export { teamData, advisorsData };

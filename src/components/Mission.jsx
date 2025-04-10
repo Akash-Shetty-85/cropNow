@@ -7,6 +7,7 @@ import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import image2 from '@/assets/Mission/m1.jpeg'
 import image3 from '@/assets/Mission/m2.jpeg'
 import image from '@/assets/Mission/m3.jpeg'
+import image4 from '@/assets/Mission/4.jpg'
 
 const content = [
   {
@@ -48,6 +49,22 @@ const content = [
         <div className="flex h-full w-full items-center justify-center text-white">
           < img
             src={image}
+            width={500}
+            height={500}
+            className="h-full w-full object-cover"
+            alt="linear board demo"
+          />
+        </div >
+      ),
+  },
+  {
+    title: "Powered by Tradition Driven by Technology.",
+    html: true,
+    description:
+      "At CropNow, our innovations are built on generations of farming wisdom and shaped by modern technology. Though our journey began in 2023, we stand on the strong foundation of collaboration with traditional farmers, local growers, agricultural scientists, software innovators, hardware engineers, and research partners.<br><br>Every solution we create from smart soil health monitoring to autonomous crop surveillance is inspired by the age old knowledge of the fields and enhanced by cutting-edge agritech advancements. We’re here to empower farmers with data, insight, and technology while honoring the roots that have sustained agriculture for centuries.CropNow is where tradition meets tomorrow.", content: (
+        <div className="flex h-full w-full items-center justify-center text-white">
+          < img
+            src={image4}
             width={500}
             height={500}
             className="h-full w-full object-cover"

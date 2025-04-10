@@ -90,12 +90,12 @@ const About = () => {
 
       <section className="screenwh">
         <h1 className="text-5xl justify-center flex !m-10 md:leading-2 lg:leading-2" style={{ fontFamily: 'Telegraf, sans-serif', fontWeight: 700 }}>
-          Advisors
+          Mentors & Expert Support Team
         </h1>
       </section>
       <FocusCards
         cards={advisorsData}
-        className="lg:grid-cols-3 lg:max-w-full font-extrabold"
+        className="lg:grid-cols-4 lg:max-w-full font-extrabold"
         imgClassName="rounded-lg hover:scale-105 transition-transform"
         renderContent={(card) => (
           <>

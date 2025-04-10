@@ -7,6 +7,23 @@ import ContactUs from "../components/ContactUs";
 import landingPageImage from "@/assets/landing.jpeg";
 import cropAnna from "@/assets/CropAnna.png";
 
+
+
+
+import image1 from '@/assets/News/Image1.png'
+import image2 from '@/assets/News/Image2.png'
+import image3 from '@/assets/News/Image3.png'
+import image4 from '@/assets/News/Image4.png'
+import image5 from '@/assets/News/Image5.png'
+import image6 from '@/assets/News/Image6.png'
+
+
+import c1 from '@/assets/company/autodesk.png'
+import c2 from '@/assets/company/azure.png'
+import c3 from '@/assets/company/Microsoft.png'
+import c4 from '@/assets/company/NVIDIA.png'
+import c5 from '@/assets/company/openAi.png'
+
 const textVariant = {
   hidden: { opacity: 0, y: 20 },
   visible: (i) => ({
@@ -24,9 +41,78 @@ const imageVariant = {
   },
 };
 
+
+const press = [
+  {
+    Image: image1,
+    name: "press1",
+  },
+  {
+    Image: image2,
+    name: "press2",
+  }, {
+    Image: image3,
+    name: "press3",
+  }, {
+    Image: image4,
+    name: "press4",
+  }, {
+    Image: image5,
+    name: "press5",
+  }, {
+    Image: image6,
+    name: "press6",
+  },
+];
+const techLeader = [
+
+  {
+    Image: c1,
+    name: "Autodesk"
+  },
+  {
+    Image:c2 ,
+    name: "Azure"
+  },
+  {
+    Image:c3,
+    name: "Microsoft"
+  },
+  {
+    Image:c4,
+    name: "NIVIDIA"
+  },
+  {
+    Image:c5,
+    name: "OpenAI"
+  },
+
+  {
+    Image:c1,
+    name: "Autodesk"
+  },
+  {
+    Image:c2,
+    name: "Azure"
+  },
+  {
+    Image:c3,
+    name: "Microsoft"
+  },
+  {
+    Image:c4,
+    name: "NIVIDIA"
+  },
+  {
+    Image:c5,
+    name: "OpenAI"
+  }
+
+]
 const HomeMobile = () => {
   const title = "CropNow.".split("");
   const subtitle = "For A Better India.".split("");
+
 
   return (
     <>
@@ -80,11 +166,12 @@ const HomeMobile = () => {
           />
         </motion.div>
       </div>
-      
+
       <Mission />
+      <Cursaol heading={'Powered By Global Tech Leader'} data={techLeader} variant="tech" />
       <Services />
       <Impact />
-      <Cursaol heading={'CropNow Featured In'} />
+      <Cursaol heading={'CropNow Featured In'} data={press} variant="press" />
       <ContactUs />
     </>
   );

@@ -8,7 +8,8 @@ export const InfiniteMovingCards = ({
     direction = "left",
     speed = "fast",
     pauseOnHover = true,
-    className
+    className,
+    variant = "default"
 }) => {
     const containerRef = React.useRef(null);
     const scrollerRef = React.useRef(null);
@@ -77,7 +78,14 @@ export const InfiniteMovingCards = ({
                                 className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]">
                             </div>
                             {item.Image && (
-                                <div className="w-full h-32 flex items-center justify-center bg-white rounded-lg">
+                                <div
+                                    className={`w-full h-32 flex items-center justify-center rounded-lg ${variant === "press"
+                                        ? "bg-white"
+                                        : variant === "tech"
+                                            ? "bg-black"
+                                            : "bg-white"
+                                        }`}
+                                >
                                     <img src={item.Image} alt={item.name} className="max-h-full object-contain" />
                                 </div>
                             )}
