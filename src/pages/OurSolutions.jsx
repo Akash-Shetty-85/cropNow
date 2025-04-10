@@ -49,9 +49,9 @@ const OurSolutions = () => {
                 <h1 className="text-6xl font-bold tracking-wide text-white drop-shadow-md">
                     Our Solutions
                 </h1>
-                <p className="text-lg !mt-4 text-gray-300 !mx-auto">
+                {/* <p className="text-lg !mt-4 text-gray-300 !mx-auto">
                     Learn how CropNow is making a difference through its innovative solutions.
-                </p>
+                </p> */}
             </motion.div>
 
             <Tabs tabs={tabs} contentClassName="!mt-25" activeTabClassName="" />

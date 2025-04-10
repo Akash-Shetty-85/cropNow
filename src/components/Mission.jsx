@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
-import image from '@/assets/mission2.jpg'
-import image2 from '@/assets/OM1.jpg'
-import image3 from '@/assets/mission1.jpg'
-
+// import image from '@/assets/mission2.jpg'
+// import image2 from '@/assets/OM1.jpg'
+// import image3 from '@/assets/mission1.jpg'
+import image2 from '@/assets/Mission/m1.jpeg'
+import image3 from '@/assets/Mission/m2.jpeg'
+import image from '@/assets/Mission/m3.jpeg'
 
 const content = [
   {
@@ -27,7 +29,7 @@ const content = [
   {
     title: "What We Build",
     description:
-      "Technology should serve farmers, not the other way around. That’s why our solutions are built with ease of use and adaptability in mind. We work closely with farmers to ensure our tools fit seamlessly into their daily routines. Unlike one-size-fits-all approaches, we focus on solving real problems with practical innovations that improve both farm productivity and environmental sustainability. At CropNow, we’re not just building technology, we’re building a future where agriculture thrives for everyone.", content: (
+      "We create practical, easy-to-use agricultural solutions designed for the real world. Whether it's AI-powered crop monitoring, precision sprinkling, or smart pest management, our technology helps farmers make informed decisions without the guesswork. By combining automation and data-driven insights, we make farming more predictable, efficient, and profitable without making it complicated.", content: (
         <div className="flex h-full w-full items-center justify-center text-white">
           < img
             src={image3}
@@ -42,7 +44,7 @@ const content = [
   {
     title: "Why We’re Different",
     description:
-      "Technology should serve farmers, not the other way around. That’s why our solutions are built with ease of use and adaptability in mind. We work closely with farmers to ensure our tools fit seamlessly into their daily routines. Unlike one-size-fits-all approaches, we focus on solving real problems with practical innovations that improve both farm productivity and environmental sustainability. At CropNow, we’re not just building technology—we’re building a future where agriculture thrives for everyone.", content: (
+      "Technology should serve farmers, not the other way around. That’s why our solutions are built with ease of use and adaptability in mind. We work closely with farmers to ensure our tools fit seamlessly into their daily routines. Unlike one-size-fits-all approaches, we focus on solving real problems with practical innovations that improve both farm productivity and environmental sustainability. At CropNow, we’re not just building technology, we’re building a future where agriculture thrives for everyone.", content: (
         <div className="flex h-full w-full items-center justify-center text-white">
           < img
             src={image}
