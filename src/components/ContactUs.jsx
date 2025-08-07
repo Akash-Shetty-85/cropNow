@@ -45,7 +45,7 @@ const ContactUs = () => {
             </p>
 
             {/* Card Section */}
-            <div className="grid md:grid-cols-3 gap-6 w-full max-w-6xl">
+            <div className="grid md:grid-cols-3 gap-10 w-full max-w-full">
                 {cardData.map((card, index) => (
                     <div
                         key={index}

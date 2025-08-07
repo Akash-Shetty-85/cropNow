@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
         <div className=''>
           <div className="flex gap-8 !mt-5 text-xl md:justify-center">
-            <a href="https://www.instagram.com/cropnow.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target='_blank' className="hover:text-white transition" aria-label="Instagram">
+            <a href="https://www.instagram.com/cropnow.in/#" target='_blank' className="hover:text-white transition" aria-label="Instagram">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a href="https://www.linkedin.com/company/cropnow/" target='_blank' className="hover:text-white transition" aria-label="LinkedIn">

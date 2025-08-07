@@ -6,6 +6,7 @@ import Impact from "./Impact";
 import ContactUs from "../components/ContactUs";
 import landingPageImage from "@/assets/landing.jpeg";
 import cropAnna from "@/assets/CropAnna.png";
+import hHSVideo from "@/assets/hHS.mp4";
 
 
 
@@ -65,76 +66,36 @@ const press = [
   },
 ];
 const techLeader = [
-
-  {
-    Image: c1,
-    name: "Autodesk"
-  },
-  {
-    Image:c2 ,
-    name: "Azure"
-  },
-  {
-    Image:c3,
-    name: "Microsoft"
-  },
-  {
-    Image:c4,
-    name: "NIVIDIA"
-  },
-  {
-    Image:c5,
-    name: "OpenAI"
-  },
-
-  {
-    Image:c1,
-    name: "Autodesk"
-  },
-  {
-    Image:c2,
-    name: "Azure"
-  },
-  {
-    Image:c3,
-    name: "Microsoft"
-  },
-  {
-    Image:c4,
-    name: "NIVIDIA"
-  },
-  {
-    Image:c5,
-    name: "OpenAI"
-  }
-
+  { id: 1, Image: c1, name: "Autodesk" },
+  { id: 2, Image: c2, name: "Azure" },
+  { id: 3, Image: c3, name: "Microsoft" },
+  { id: 4, Image: c4, name: "NIVIDIA" },
+  { id: 5, Image: c5, name: "OpenAI" },
+  { id: 6, Image: c1, name: "Autodesk" },
+  { id: 7, Image: c2, name: "Azure" },
+  { id: 8, Image: c3, name: "Microsoft" },
+  { id: 9, Image: c4, name: "NIVIDIA" },
+  { id: 10, Image: c5, name: "OpenAI" },
 ]
 const HomeMobile = () => {
   const title = "CropNow.".split("");
   const subtitle = "For A Better India.".split("");
 
-
   return (
     <>
-      <div className=" relative min-h-screen hidden md:flex items-center justify-center overflow-x-hidden p-4">
-        {/* Background Image */}
-        <motion.div
-          className="absolute inset-0 bg-top rounded-xl"
-          style={{
-            backgroundImage: `url(${landingPageImage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            width: "100%",
-            height: "100%",
-            filter: "brightness(85%)",
-          }}
-          variants={imageVariant}
-          initial="hidden"
-          animate="visible"
+      {/* Video Background for Desktop */}
+      <div className="relative min-h-screen hidden md:flex items-center justify-center overflow-x-hidden p-4">
+        <video
+          className="absolute inset-0 w-full h-full object-cover rounded-xl z-0"
+          src={hHSVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ filter: "brightness(85%)" }}
         />
-
         {/* Text Content */}
-        <div className="relative text-left text-white p-4 bg-opacity-60 rounded-xl">
+        <div className="relative text-left text-white p-4 bg-opacity-60 rounded-xl z-10">
           <h1 className="text-5xl md:text-8xl  font-bold leading-tight" style={{ fontFamily: "Telegraf, sans-serif" }}>
             {title.map((letter, i) => (
               <motion.span key={i} custom={i} variants={textVariant} initial="hidden" animate="visible">
@@ -142,8 +103,7 @@ const HomeMobile = () => {
               </motion.span>
             ))}
           </h1>
-
-          <p className="text-black text-3xl md:text-5xl mt-1 text-right" style={{ fontFamily: "Avallon, sans-serif" }}>
+          <p className="text-white text-xl md:text-5xl md:mt-1 mt-1 text-right" style={{ fontFamily: "Avallon, sans-serif" }}>
             {subtitle.map((letter, i) => (
               <motion.span key={i} custom={i + 10} variants={textVariant} initial="hidden" animate="visible">
                 {letter}
@@ -151,9 +111,8 @@ const HomeMobile = () => {
             ))}
           </p>
         </div>
-
         <motion.div
-          className="absolute bottom-4 right-4 p-1 rounded-full shadow-lg cursor-pointer hover:bg-green-100 transition-transform transform hover:scale-105"
+          className="absolute bottom-4 right-4 p-1 rounded-full shadow-lg cursor-pointer hover:bg-green-100 transition-transform transform hover:scale-105 z-10"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
@@ -166,7 +125,48 @@ const HomeMobile = () => {
           />
         </motion.div>
       </div>
-
+      {/* Video Background for Mobile */}
+      <div className="relative min-h-screen flex md:hidden items-center justify-center overflow-x-hidden p-2">
+        <video
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          src={hHSVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ filter: "brightness(85%)" }}
+        />
+        <div className="relative text-center text-white p-2 bg-opacity-60 rounded-xl z-10 w-full flex flex-col items-center justify-center">
+          <h1 className="text-3xl font-bold leading-tight" style={{ fontFamily: "Telegraf, sans-serif" }}>
+            {title.map((letter, i) => (
+              <motion.span key={i} custom={i} variants={textVariant} initial="hidden" animate="visible">
+                {letter}
+              </motion.span>
+            ))}
+          </h1>
+          <p className="text-white text-xl mt-1 text-center" style={{ fontFamily: "Avallon, sans-serif" }}>
+            {subtitle.map((letter, i) => (
+              <motion.span key={i} custom={i + 10} variants={textVariant} initial="hidden" animate="visible">
+                {letter}
+              </motion.span>
+            ))}
+          </p>
+        </div>
+        <motion.div
+          className="absolute bottom-2 right-2 p-1 rounded-full shadow-lg cursor-pointer hover:bg-green-100 transition-transform transform hover:scale-105 z-10"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          onClick={() => window.location.href = "/chat"}
+        >
+          <img
+            src={cropAnna}
+            alt="ChatBot Icon"
+            className="w-10 h-10 object-contain rounded-full"
+          />
+        </motion.div>
+      </div>
+      {/* Rest of the content */}
       <Mission />
       <Cursaol heading={'Powered By Global Tech Leader'} data={techLeader} variant="tech" />
       <Services />
