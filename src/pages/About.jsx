@@ -152,7 +152,7 @@ const About = () => {
       </section>
       <FocusCards
         cards={teamData}
-        className="lg:grid-cols-3 lg:max-w-full font-extrabold"
+        className="grid-cols-2 md:grid-cols-3 lg:max-w-full font-extrabold"
         imgClassName="rounded-lg hover:scale-105 transition-transform"
         renderContent={(card) => (
           <>
@@ -189,7 +189,7 @@ const About = () => {
       </section>
       <FocusCards
         cards={advisorsData}
-        className="lg:grid-cols-3 lg:max-w-full font-extrabold"
+        className="grid-cols-2 md:grid-cols-3 lg:max-w-full font-extrabold"
         imgClassName="rounded-lg hover:scale-105 transition-transform"
         renderContent={(card) => (
           <>
