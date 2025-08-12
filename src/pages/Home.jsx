@@ -86,7 +86,7 @@ const HomeMobile = () => {
       {/* Video Background for Desktop */}
       <div className="relative min-h-screen hidden md:flex items-center justify-center overflow-x-hidden p-4">
         <video
-          className="absolute inset-0 w-full h-full object-cover rounded-xl z-0"
+          className="absolute inset-0 w-full h-full object-fill md:object-cover rounded-xl z-0 "
           src={hHSVideo}
           autoPlay
           loop

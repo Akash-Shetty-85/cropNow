@@ -1,9 +1,9 @@
-import { FocusCards } from '../components/ui/focus-cards';
-import { motion } from 'framer-motion';
-import { teamData } from '@/data/teamData';
-import { advisorsData } from '@/data/teamData';
-import timelineData from '@/data/timeLine';
-import featuresData from '@/data/featuresData';
+import { FocusCards } from "../components/ui/focus-cards";
+import { motion } from "framer-motion";
+import { teamData } from "@/data/teamData";
+import { advisorsData } from "@/data/teamData";
+import timelineData from "@/data/timeLine";
+import featuresData from "@/data/featuresData";
 
 const About = () => {
   return (
@@ -13,16 +13,17 @@ const About = () => {
         className="!mb-8 text-center"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h1
           className="text-6xl font-bold tracking-wide text-white drop-shadow-md"
-          style={{ fontFamily: 'Telegraf, sans-serif', fontWeight: 700 }}
+          style={{ fontFamily: "Telegraf, sans-serif", fontWeight: 700 }}
         >
           About Us
         </h1>
         <p className="text-lg !mt-4 text-gray-300 max-w-full !mx-auto">
-          Discover the roots of CropNow, where purpose meets progress in sustainable agriculture.
+          Discover the roots of CropNow, where purpose meets progress in
+          sustainable agriculture.
         </p>
       </motion.div>
 
@@ -34,9 +35,10 @@ const About = () => {
         transition={{ duration: 0.6, delay: 0.4 }}
       >
         <p>
-          CropNow is an agritech company dedicated to transforming agriculture through innovation,
-          automation, and sustainable solutions. We develop AI-powered, data-driven technologies to
-          enhance productivity, optimize resource usage, and promote eco-friendly farming practices.
+          CropNow is an agritech company dedicated to transforming agriculture
+          through innovation, automation, and sustainable solutions. We develop
+          AI-powered, data-driven technologies to enhance productivity, optimize
+          resource usage, and promote eco-friendly farming practices.
         </p>
       </motion.div>
 
@@ -69,13 +71,13 @@ const About = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">
           Our Journey
         </h2>
-        
+
         {/* Desktop Timeline */}
         <div className="hidden lg:block">
           <div className="relative">
             {/* Center Line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-white to-black"></div>
-            
+
             {timelineData.map((item, index) => (
               <motion.div
                 key={index}
@@ -83,11 +85,17 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true, margin: "-100px" }}
-                className={`flex items-center mb-16 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
+                className={`flex items-center mb-16 ${
+                  index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                }`}
               >
                 {/* Content */}
-                <div className={`w-5/12 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                  <motion.div 
+                <div
+                  className={`w-5/12 ${
+                    index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
+                  }`}
+                >
+                  <motion.div
                     className="bg-white text-black rounded-xl p-6 border border-white/20 hover:bg-black hover:text-white transition-all duration-300 cursor-pointer"
                     whileHover={{ scale: 1.05, y: -5 }}
                   >
@@ -96,12 +104,12 @@ const About = () => {
                     <div className="text-sm opacity-70 mt-2">{item.date}</div>
                   </motion.div>
                 </div>
-                
+
                 {/* Timeline Dot */}
                 <div className="w-2/12 flex justify-center">
                   <div className="w-4 h-4 bg-white rounded-full border-4 border-black shadow-lg"></div>
                 </div>
-                
+
                 {/* Empty Space */}
                 <div className="w-5/12"></div>
               </motion.div>
@@ -111,7 +119,7 @@ const About = () => {
 
         {/* Mobile Timeline */}
         <div className="lg:hidden">
-          <div className="space-y-8">
+          <div className="!space-y-8">
             {timelineData.map((item, index) => (
               <motion.div
                 key={index}
@@ -137,14 +145,14 @@ const About = () => {
       <section className="screenwh">
         <h1
           className="text-5xl justify-center flex !m-10 md:leading-2 lg:leading-2"
-          style={{ fontFamily: 'Telegraf, sans-serif', fontWeight: 700 }}
+          style={{ fontFamily: "Telegraf, sans-serif", fontWeight: 700 }}
         >
           The Minds Behind Our Mission
         </h1>
       </section>
       <FocusCards
         cards={teamData}
-        className="lg:grid-cols-4 lg:max-w-full font-extrabold"
+        className="lg:grid-cols-3 lg:max-w-full font-extrabold"
         imgClassName="rounded-lg hover:scale-105 transition-transform"
         renderContent={(card) => (
           <>
@@ -174,14 +182,14 @@ const About = () => {
       <section className="screenwh">
         <h1
           className="text-5xl justify-center flex !m-10 md:leading-2 lg:leading-2"
-          style={{ fontFamily: 'Telegraf, sans-serif', fontWeight: 700 }}
+          style={{ fontFamily: "Telegraf, sans-serif", fontWeight: 700 }}
         >
           Mentors & Expert Support Team
         </h1>
       </section>
       <FocusCards
         cards={advisorsData}
-        className="lg:grid-cols-4 lg:max-w-full font-extrabold"
+        className="lg:grid-cols-3 lg:max-w-full font-extrabold"
         imgClassName="rounded-lg hover:scale-105 transition-transform"
         renderContent={(card) => (
           <>

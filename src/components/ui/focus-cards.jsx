@@ -24,7 +24,7 @@ export const Card = React.memo(({
             src={card.src}
             alt={card.title}
             className={twMerge(
-                "object-cover absolute inset-0 w-full h-full",
+                "object-cover object-top absolute inset-0 w-full h-full",
                 imgClassName
             )}
         />
