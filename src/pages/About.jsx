@@ -66,7 +66,7 @@ const About = () => {
         ))}
       </motion.div>
 
-      {/* Custom Timeline Section */}
+      {/* Our Journey Section */}
       <section className="!mt-16 relative">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">
           Our Journey
@@ -74,46 +74,54 @@ const About = () => {
 
         {/* Desktop Timeline */}
         <div className="hidden lg:block">
-          <div className="relative">
+          <div className="relative max-w-5xl mx-auto">
             {/* Center Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-white to-black"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-400 via-purple-500 to-pink-500"></div>
 
-            {timelineData.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                viewport={{ once: true, margin: "-100px" }}
-                className={`flex items-center mb-16 ${
-                  index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-                }`}
-              >
-                {/* Content */}
-                <div
-                  className={`w-5/12 ${
-                    index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
+            <div className="space-y-12">
+              {timelineData.map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.7, delay: index * 0.2 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  className={`relative flex items-center ${
+                    index % 2 === 0 ? "flex-row" : "flex-row-reverse"
                   }`}
                 >
-                  <motion.div
-                    className="bg-white text-black rounded-xl p-6 border border-white/20 hover:bg-black hover:text-white transition-all duration-300 cursor-pointer"
-                    whileHover={{ scale: 1.05, y: -5 }}
+                  {/* Content Card */}
+                  <div
+                    className={`w-5/12 ${
+                      index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
+                    }`}
                   >
-                    <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-                    <p className="leading-relaxed text-white">{item.content}</p>
-                    <div className="text-sm opacity-70 mt-2">{item.date}</div>
-                  </motion.div>
-                </div>
+                    <motion.div
+                      whileHover={{ scale: 1.05, y: -5 }}
+                      className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-lg hover:bg-white/20 transition-all duration-300"
+                    >
+                      <h3 className="text-2xl font-bold text-white mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-300 leading-relaxed">
+                        {item.content}
+                      </p>
+                      <span className="block mt-3 text-sm text-gray-400 italic">
+                        {item.date}
+                      </span>
+                    </motion.div>
+                  </div>
 
-                {/* Timeline Dot */}
-                <div className="w-2/12 flex justify-center">
-                  <div className="w-4 h-4 bg-white rounded-full border-4 border-black shadow-lg"></div>
-                </div>
+                  {/* Timeline Dot */}
+                  <div className="w-2/12 flex justify-center relative">
+                    <div className="w-6 h-6 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full border-4 border-black shadow-lg animate-pulse"></div>
+                  </div>
 
-                {/* Empty Space */}
-                <div className="w-5/12"></div>
-              </motion.div>
-            ))}
+                  {/* Empty space for alignment */}
+                  <div className="w-5/12"></div>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -125,16 +133,18 @@ const About = () => {
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0, delay: index * 0.1 }}
                 viewport={{ once: true, margin: "-50px" }}
-                className="bg-white text-black rounded-xl p-6 border border-white/20"
+                className="bg-white/10 backdrop-blur-md text-white rounded-xl p-6 border border-white/20 shadow-md hover:bg-white/20 transition-all duration-300"
               >
                 <div className="flex items-center mb-4">
-                  <div className="w-3 h-3 bg-white rounded-full mr-4 border-2 border-black"></div>
+                  <div className="w-4 h-4 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mr-4 border-2 border-black shadow"></div>
                   <h3 className="text-xl font-bold">{item.title}</h3>
                 </div>
-                <p className="leading-relaxed mb-2">{item.description}</p>
-                <div className="text-sm opacity-70">{item.date}</div>
+                <p className="leading-relaxed text-gray-300 mb-2">
+                  {item.content}
+                </p>
+                <div className="text-sm text-gray-400 italic">{item.date}</div>
               </motion.div>
             ))}
           </div>
