@@ -22,7 +22,7 @@ const Footer = () => {
 
           <p className="flex items-start gap-2 !mb-3">
             <FontAwesomeIcon icon={faMapMarkerAlt} className="w-5 h-5 !mt-1" />
-            REVA Nest, Rukmini Knowledge Park, Kattigenahalli, Bangalore - 560064
+            Rukmini Knowledge Park, Kattigenahalli, Bangalore - 560064
           </p>
 
           <p className="flex items-start gap-2 !mb-3">

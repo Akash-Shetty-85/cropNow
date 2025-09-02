@@ -11,8 +11,8 @@ const sections = [
   {
     title: "Who We Are",
     description: `
-      At CropNow, we believe that agriculture should be smarter, more efficient, and sustainable for generations to come.<br/><br/>
-      We’re not just another agri-tech company — we’re a team passionate about empowering farmers with the right tools.<br/><br/>
+      At CropNow, we believe that agriculture should be smarter, more efficient, and sustainable for generations to come.
+      We’re not just another agri-tech company we’re a team passionate about empowering farmers with the right tools. 
       Our mission is simple: to help farmers grow more with less, using technology that enhances productivity, conserves resources, and supports eco-friendly practices.
     `,
     image: image2
@@ -29,9 +29,9 @@ const sections = [
   },
   {
     title: "Powered by Tradition, Driven by Technology",
-    description: `At CropNow, our innovations are built on generations of farming wisdom and shaped by modern technology.<br/><br/>
-    Though our journey began in 2023, we stand on the strong foundation of collaboration with traditional farmers, local growers, agri-scientists, and engineers.<br/><br/>
-    Every solution — from smart soil monitoring to autonomous crop surveillance — is inspired by field knowledge and enhanced by cutting-edge agri-tech. CropNow is where tradition meets tomorrow.`,
+    description: `At CropNow, our innovations are built on generations of farming wisdom and shaped by modern technology.
+    Though our journey began in 2023, we stand on the strong foundation of collaboration with traditional farmers, local growers, agri-scientists, and engineers.
+    Every solution from smart soil monitoring to autonomous crop surveillance  is inspired by field knowledge and enhanced by cutting-edge agri-tech. CropNow is where tradition meets tomorrow.`,
     image: image4
   }
 ];

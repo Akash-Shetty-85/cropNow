@@ -8,7 +8,7 @@ export const Card = React.memo(({
     hovered,
     setHovered,
     imgClassName,
-    renderContent ,
+    renderContent,
     onClick
 }) => (
     <div
@@ -29,12 +29,13 @@ export const Card = React.memo(({
             )}
         />
         <div
-            className={cn(
+           className={cn(
                 "absolute inset-0 bg-black/50 flex flex-col justify-end py-8 px-4 transition-opacity duration-300",
-                hovered === index ? "opacity-100" : "opacity-0"
+                "opacity-100 md:opacity-0",
+                hovered === index && "md:opacity-100"
             )}
         >
-            <div className="text-xl font-extrabold md:text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
+            <div className="capitalize text-xs font-semibold md:font-extrabold md:text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
                 {card.title}
             </div>
             {renderContent && renderContent(card)}

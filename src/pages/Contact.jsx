@@ -120,17 +120,17 @@ const Contact = () => {
 
           <div className="!space-y-6">
             <div>
-              <h3 className="text-lg font-semibold text-gray-100">📍 Location</h3>
-              <p className="text-gray-300">REVA Nest, Rukmini Knowledge Park, Kattigenahalli, Bangalore - 560064</p>
+              <h3 className="text-lg font-semibold text-gray-100">Location</h3>
+              <p className="text-gray-300">Rukmini Knowledge Park, Kattigenahalli, Bangalore - 560064</p>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-gray-100">📧 Email</h3>
+              <h3 className="text-lg font-semibold text-gray-100">Email</h3>
               <p className="text-gray-300">cropnow.contact@gmail.com</p>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-gray-100">📞 Phone</h3>
+              <h3 className="text-lg font-semibold text-gray-100">Phone</h3>
               <p className="text-gray-300">+91 9141749525</p>
             </div>
 
