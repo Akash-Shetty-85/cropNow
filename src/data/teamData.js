@@ -1,66 +1,67 @@
-import image from "../assets/Team/k.jpg";
-import image1 from "../assets/Team/n.png";
-import image2 from "../assets/Team/Ri.png";
-import image3 from "../assets/Team/Ir.png";
-import image4 from "../assets/Team/m.jpeg";
-import image5 from "../assets/Team/p.jpeg";
-import image6 from "../assets/Team/g.jpeg";
-import image7 from "@/assets/Team/bh.jpg";
-import image8 from "@/assets/Team/j.png";
-import image9 from "@/assets/Team/gi.jpg";
-import image10 from "@/assets/Team/sa.png";
-import image11 from "@/assets/Team/g.png"
-import image12 from "@/assets/Team/d.png"
-import image13 from "@/assets/Team/Ak.jpeg"
+import Kabeer from "../assets/Team/Core/k.jpg";
+import Aman from "../assets/Team/Core/n.png";
+import Riyaz from "../assets/Team/Core/Ri.png";
+import Irum from "../assets/Team/Core/Ir.png";
+import Sathwik from "@/assets/Team/Core/sa.png";
+import Gowthami from "@/assets/Team/Core/g.png"
+import Dhwani from "@/assets/Team/Core/d.png"
+import Akash from "@/assets/Team/Core/Ak.jpeg"
+
+import Jayaraj from '@/assets/Team/Mentors/J.png'
+import Girish from '@/assets/Team/Mentors/Gi.png'
+import Malathi from '@/assets/Team/Mentors/M.png'
+import Bakthavatsalam from '@/assets/Team/Mentors/B.png'
+import Ghouse from '@/assets/Team/Mentors/G.png'
+import Pasupuleti from '@/assets/Team/Mentors/P.png'
 
 const teamData = [
   {
     title: "Mohammed Kabeer",
-    src: image,
+    src: Kabeer,
     post: "Founder & CEO",
     linkedin: "https://www.linkedin.com/in/mohammed-kabeer",
   },
   {
     title: "Mohammad Aman",
-    src: image1,
+    src: Aman,
     post: "Director - R&D and Operations",
     linkedin: "https://www.linkedin.com/in/mohammad-aman-993421326",
   },
   {
     title: "Riyaz Ur Rehman",
-    src: image2,
+    src: Riyaz,
     post: "Project Manager – Design & Development",
     linkedin:
       "https://www.linkedin.com/in/riyaz-ur-rahman-905b1b326/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     title: "Irum Fathima",
-    src: image3,
+    src: Irum,
     post: "Project Manager – Operations & Research",
     linkedin:
       "https://www.linkedin.com/in/irum-fathima-a56019200/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     title: "Sathwik G",
-    src: image10,
+    src: Sathwik,
     post: "Lead – Mechatronics & Mechanical",
     linkedin: "https://www.linkedin.com/in/sathwik-gandoori-3838aa294/",
   },
   {
     title: "Gowthami M",
-    src: image11,
+    src: Gowthami,
     post: "Lead – Bio & Chemistry",
     linkedin: "https://www.linkedin.com/in/gowthami-m-148bb832a/",
   },
   {
     title: "Dhwani patel",
-    src: image12,
+    src: Dhwani,
     post: "Project Strategy Associate",
     linkedin: "https://www.linkedin.com/in/dhwani-patel-2875081b5",
   },
   {
     title: "V Akash",
-    src: image13,
+    src: Akash,
     post: "Dept. Head & Software Lead",
     linkedin: "https://www.linkedin.com/in/akash-v-shetty/",
   }
@@ -70,36 +71,36 @@ const teamData = [
 const advisorsData = [
   {
     title: "Dr. Pasupuleti Visweswara Rao",
-    src: image5,
+    src: Pasupuleti,
     post: "Research Advisor",
     linkedin:
       "https://www.linkedin.com/in/prof-ts-dr-pasupuleti-visweswara-rao-93b2ab18",
   },
   {
     title: "Ghouse",
-    src: image6,
+    src: Ghouse,
     post: "Engineering Advisor",
   },
   {
     title: "Dr. N. Bakthavatsalam",
-    src: image7,
+    src: Bakthavatsalam,
     post: "Entomology Advisor",
   },
   {
     title: "Malathi Ramakrishna",
-    src: image4,
+    src: Malathi,
     post: "Entrepreneurship Advisor ",
     linkedin: "https://www.linkedin.com/in/malathi-ramakrishna-12441541",
   },
   {
     title: "Dr. Jayaraj Vijaya Kumaran",
-    src: image8,
+    src: Jayaraj,
     post: "Scientific advisor",
     linkedin: "https://www.linkedin.com/in/jayaraj-vijaya-kumaran-a55a8128/",
   },
   {
     title: "Girish K C",
-    src: image9,
+    src: Girish,
     post: "Technical advisor",
     linkedin: "https://www.linkedin.com/in/girishkc/",
   },

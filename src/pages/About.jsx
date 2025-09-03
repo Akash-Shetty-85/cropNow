@@ -76,7 +76,7 @@ const About = () => {
         <div className="hidden lg:block">
           <div className="relative max-w-5xl mx-auto">
             {/* Center Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-400 via-purple-500 to-pink-500"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-green-400 via-green-600 to-green-900"></div>
 
             <div className="space-y-12">
               {timelineData.map((item, index) => (
@@ -112,7 +112,7 @@ const About = () => {
 
                   {/* Timeline Dot */}
                   <div className="w-2/12 flex justify-center relative">
-                    <div className="w-6 h-6 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full border-4 border-black shadow-lg animate-pulse"></div>
+                    <div className="w-6 h-6 bg-gradient-to-r from-green-400 to-green-700 rounded-full border-4 border-black shadow-lg "></div>
                   </div>
 
                   {/* Empty space for alignment */}
@@ -136,7 +136,7 @@ const About = () => {
                 className="bg-black/10 backdrop-blur-md text-white rounded-xl p-6 border border-white/20 shadow-md hover:bg-white/20 transition-all duration-300"
               >
                 <div className="flex items-center mb-4">
-                  <div className="w-4 h-4 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mr-4 border-2 border-black shadow"></div>
+                  <div className="w-4 h-4 bg-gradient-to-r from-green-400 to-green-500 rounded-full mr-4 border-2 border-black shadow"></div>
                   <h3 className="text-xl font-bold">{item.title}</h3>
                 </div>
                 <p className="leading-relaxed text-gray-300 mb-2">
@@ -201,11 +201,11 @@ const About = () => {
       <FocusCards
         cards={advisorsData}
         className="grid-cols-2 lg:grid-cols-3 lg:max-w-full font-extrabold md:w-7xl md:text-xl"
-        imgClassName="rounded-lg hover:scale-105 transition-transform md:object-contain"
+        imgClassName="rounded-lg hover:scale-105 transition-transform md:object-cover"
         renderContent={(card) => (
           <>
             <div className="flex justify-between items-center">
-              <p className="text-[2vw] md:text-sm text-gray-200 !mt-1 capitalize font-normal">{card.post}</p>
+              <p className="text-[2.5vw] tracking-tigh md:text-sm text-gray-200 !mt-1 capitalize font-normal">{card.post}</p>
               {card.linkedin && (
                 <a
                   href={card.linkedin}
