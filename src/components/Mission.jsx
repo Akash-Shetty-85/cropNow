@@ -19,12 +19,12 @@ const sections = [
   },
   {
     title: "What We Build",
-    description: `We create practical, easy-to-use agricultural solutions designed for the real world. Whether it's AI-powered crop monitoring, precision sprinkling, or smart pest management, our technology helps farmers make informed decisions without the guesswork. By combining automation and data-driven insights, we make farming more predictable, efficient, and profitable without making it complicated.`,
+    description: `We create practical, easy to use agricultural solutions designed for the real world. Whether it's AI-powered crop monitoring, precision sprinkling, or smart pest management, our technology helps farmers make informed decisions without the guesswork. By combining automation and data driven insights, we make farming more predictable, efficient, and profitable without making it complicated.`,
     image: image3
   },
   {
     title: "Why We’re Different",
-    description: `Technology should serve farmers, not the other way around. That’s why our solutions are built with ease of use and adaptability in mind. We work closely with farmers to ensure our tools fit seamlessly into their daily routines. Unlike one-size-fits-all approaches, we focus on solving real problems with practical innovations that improve both farm productivity and environmental sustainability.`,
+    description: `Technology should serve farmers, not the other way around. That’s why our solutions are built with ease of use and adaptability in mind. We work closely with farmers to ensure our tools fit seamlessly into their daily routines. Unlike one size fits all approaches, we focus on solving real problems with practical innovations that improve both farm productivity and environmental sustainability.`,
     image: image
   },
   {

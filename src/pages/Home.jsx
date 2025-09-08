@@ -4,7 +4,6 @@ import Services from "../components/Services";
 import Cursaol from "../components/Cursaol";
 import Impact from "./Impact";
 import ContactUs from "../components/ContactUs";
-import landingPageImage from "@/assets/landing.jpeg";
 import cropAnna from "@/assets/CropAnna.png";
 import hHSVideo from "@/assets/hHS.mp4";
 
@@ -17,6 +16,10 @@ import image3 from '@/assets/News/Image3.png'
 import image4 from '@/assets/News/Image4.png'
 import image5 from '@/assets/News/Image5.png'
 import image6 from '@/assets/News/Image6.png'
+import DailyHunt from '@/assets/News/DilyHunt.svg'
+import BusinessPress from '@/assets/News/BusinessPress.png'
+import Globally24 from '@/assets/News/Globally24.png'
+import StartUpTimes from '@/assets/News/StartUpTimes.png'
 
 
 import c1 from '@/assets/company/autodesk.png'
@@ -49,21 +52,42 @@ const press = [
     name: "press1",
   },
   {
+    Image: BusinessPress,
+    name: "BusinessPress",
+  },
+  {
     Image: image2,
     name: "press2",
-  }, {
-    Image: image3,
-    name: "press3",
-  }, {
+  },
+  {
+    Image: StartUpTimes,
+    name: "StartUpTimes",
+  },
+  {
     Image: image4,
     name: "press4",
-  }, {
+  },
+  {
+    Image: Globally24,
+    name: "Globally24",
+  },
+  {
     Image: image5,
     name: "press5",
   }, {
     Image: image6,
     name: "press6",
   },
+  {
+    Image: DailyHunt,
+    name: "DailyHunt",
+  },
+  {
+    Image: image3,
+    name: "press3",
+  },
+  
+
 ];
 const techLeader = [
   { id: 1, Image: c1, name: "Autodesk" },

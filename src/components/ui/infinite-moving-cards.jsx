@@ -86,7 +86,7 @@ export const InfiniteMovingCards = ({
                                             : "bg-white"
                                         }`}
                                 >
-                                    <img src={item.Image} alt={item.name} className="max-h-full object-contain" />
+                                    <img src={item.Image} alt={item.name} className="max-h-full !object-cover" />
                                 </div>
                             )}
 

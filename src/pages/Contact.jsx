@@ -25,24 +25,43 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Show success alert
-    alert("✅ Successfully Submitted!");
+    try {
+      await fetch(
+        "/api",
+        {
+          method: "POST",
+          mode: "no-cors", // Prevents CORS errors
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
-    // Reset form fields
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-      inquiryType: selectedOption,
-    });
+      alert("✅ Successfully Submitted & Saved to Google Sheets!");
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+        inquiryType: selectedOption,
+      });
+    } catch (error) {
+      console.error("Error:", error);
+      alert("❌ Failed to save data. Please try again.");
+    }
   };
 
   return (
     <div className="min-h-screen bg-transparent text-white flex flex-col items-center p-10">
-      <h1 className="text-4xl font-bold mb-6" style={{ fontFamily: "Telegraf, sans-serif", fontWeight: 700 }}>
+      <h1
+        className="text-4xl font-bold mb-6"
+        style={{ fontFamily: "Telegraf, sans-serif", fontWeight: 700 }}
+      >
         Contact Us
       </h1>
 
@@ -115,13 +134,16 @@ const Contact = () => {
         <div className="bg-transparent p-6 rounded-xl">
           <h2 className="text-2xl font-semibold !mb-4">Our Contact Details</h2>
           <p className="text-gray-300 !mb-4">
-            Feel free to reach out to us for any inquiries, collaborations, or support.
+            Feel free to reach out to us for any inquiries, collaborations, or
+            support.
           </p>
 
           <div className="!space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-gray-100">Location</h3>
-              <p className="text-gray-300">Rukmini Knowledge Park, Kattigenahalli, Bangalore - 560064</p>
+              <p className="text-gray-300">
+                Rukmini Knowledge Park, Kattigenahalli, Bangalore - 560064
+              </p>
             </div>
 
             <div>
@@ -135,8 +157,12 @@ const Contact = () => {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-gray-100">🕒 Business Hours</h3>
-              <p className="text-gray-300">Monday - Friday: 9:00 AM - 6:00 PM</p>
+              <h3 className="text-lg font-semibold text-gray-100">
+                🕒 Business Hours
+              </h3>
+              <p className="text-gray-300">
+                Monday - Friday: 9:00 AM - 6:00 PM
+              </p>
             </div>
           </div>
         </div>
