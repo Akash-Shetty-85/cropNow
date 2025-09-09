@@ -13,6 +13,9 @@ const Contact = () => {
     inquiryType: selectedOption,
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [statusMessage, setStatusMessage] = useState("");
+
   useEffect(() => {
     setFormData((prevData) => ({
       ...prevData,
@@ -27,13 +30,15 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setStatusMessage("");
 
     try {
       await fetch(
         "https://script.google.com/macros/s/AKfycbzZ81kEHLhFieyG1uohQ_IzK89n0XDmrpzgAr5LOXNfTCdDkvazKctj6cI9GPZCCIoC6A/exec",
         {
           method: "POST",
-          mode: "no-cors", // Prevents CORS errors
+          mode: "no-cors", // still required if hitting Apps Script directly
           headers: {
             "Content-Type": "application/json",
           },
@@ -41,9 +46,7 @@ const Contact = () => {
         }
       );
 
-      alert("✅ Successfully Submitted & Saved to Google Sheets!");
-
-      // Reset form
+      setStatusMessage("✅ Successfully Submitted! We'll get back to you soon.");
       setFormData({
         name: "",
         email: "",
@@ -52,7 +55,9 @@ const Contact = () => {
       });
     } catch (error) {
       console.error("Error:", error);
-      alert("❌ Failed to save data. Please try again.");
+      setStatusMessage("❌ Failed to submit. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -123,10 +128,21 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full p-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition"
+              disabled={isSubmitting}
+              className={`w-full p-3 font-semibold rounded-lg transition ${
+                isSubmitting
+                  ? "bg-gray-500 cursor-not-allowed"
+                  : "bg-green-600 hover:bg-green-700 text-white"
+              }`}
             >
-              Submit
+              {isSubmitting ? "Submitting..." : "Submit"}
             </button>
+
+            {statusMessage && (
+              <p className="text-center mt-3 text-sm text-gray-300">
+                {statusMessage}
+              </p>
+            )}
           </form>
         </div>
 
