@@ -70,7 +70,7 @@ const Contact = () => {
         Contact Us
       </h1>
 
-      <div className="grid md:grid-cols-2 bg-red-400 gap-8  md:w-full max-w-7xl bg-transparent p-2 md:p-10 rounded-2xl shadow-lg">
+      <div className="grid md:grid-cols-2  gap-8  md:w-full max-w-7xl bg-transparent p-2 md:p-10 rounded-2xl shadow-lg">
         {/* Contact Form */}
         <div className="bg-transparent md:p-6 rounded-xl">
           <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
