@@ -70,9 +70,9 @@ const Contact = () => {
         Contact Us
       </h1>
 
-      <div className="grid md:grid-cols-2 gap-8 w-full max-w-6xl bg-transparent p-10 rounded-2xl shadow-lg">
+      <div className="grid md:grid-cols-2 bg-red-400 gap-8  md:w-full max-w-7xl bg-transparent p-2 md:p-10 rounded-2xl shadow-lg">
         {/* Contact Form */}
-        <div className="bg-transparent p-6 rounded-xl">
+        <div className="bg-transparent md:p-6 rounded-xl">
           <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
@@ -147,7 +147,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Details */}
-        <div className="bg-transparent p-6 rounded-xl">
+        <div className="bg-transparent p-3 md:p-6 rounded-xl">
           <h2 className="text-2xl font-semibold !mb-4">Our Contact Details</h2>
           <p className="text-gray-300 !mb-4">
             Feel free to reach out to us for any inquiries, collaborations, or
