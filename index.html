@@ -7,13 +7,24 @@
 
     <!-- ✅ Title & Meta Description for SEO -->
     <title>CropNow | For a Better India</title>
-    <meta name="description" content="CropNow helps Indian farmers with smart solutions for better crop yield and sustainability." />
+    <meta name="description" content="CropNow empowers Indian farmers with AI-driven agricultural insights, smart solutions for better crop yield, and sustainable farming practices." />
     <meta name="author" content="CropNow Team" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;" />
+    <link rel="canonical" href="https://cropnow.in" />
 
-    <!-- ✅ Open Graph Meta Tags for Social Media -->
+    <!-- ✅ Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        script-src 'self';
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data:;
+        connect-src 'self' https://script.google.com https://*.googleusercontent.com;
+        font-src 'self' data:;
+      " />
+
+    <!-- ✅ Open Graph Meta Tags (for Social Media) -->
     <meta property="og:title" content="CropNow | For a Better India" />
-    <meta property="og:description" content="Empowering farmers with AI-driven agricultural insights." />
+    <meta property="og:description" content="Empowering farmers with AI-driven agricultural insights and smart farming systems." />
     <meta property="og:image" content="/og-image.png" />
     <meta property="og:url" content="https://cropnow.in" />
     <meta property="og:type" content="website" />
@@ -26,13 +37,15 @@
 
     <!-- ✅ Favicons -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
 
-    <!-- ✅ Load Styles Efficiently -->
+    <!-- ✅ Preload & Styles -->
+    <link rel="preload" href="/src/index.css" as="style" />
     <link rel="stylesheet" href="/src/index.css" />
 
-    <!-- ✅ Performance Optimization: Defer Non-Essential JS -->
+    <!-- ✅ Performance Optimization: Load React entry point deferred -->
     <script type="module" src="/src/main.jsx" defer></script>
   </head>
   <body>

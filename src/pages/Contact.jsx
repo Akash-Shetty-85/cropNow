@@ -30,7 +30,7 @@ const Contact = () => {
 
     try {
       await fetch(
-        "/api",
+        "https://script.google.com/macros/s/AKfycbzZ81kEHLhFieyG1uohQ_IzK89n0XDmrpzgAr5LOXNfTCdDkvazKctj6cI9GPZCCIoC6A/exec",
         {
           method: "POST",
           mode: "no-cors", // Prevents CORS errors
